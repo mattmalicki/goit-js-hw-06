@@ -3,12 +3,12 @@ const value = document.querySelector("#value");
 
 const decrement = () => {
   counterValue--;
-  value.textContent = `${counterValue}`;
+  value.textContent = counterValue;
 };
 
 const increment = () => {
   counterValue++;
-  value.textContent = `${counterValue}`;
+  value.textContent = counterValue;
 };
 
 const decButton = document.querySelector('button[data-action="decrement"]');
