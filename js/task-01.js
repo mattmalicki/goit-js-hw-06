@@ -3,10 +3,9 @@ console.log(`Number of categories: ${categoriesAmount.length}`);
 
 const categoriesArray = document.querySelectorAll(".item");
 
-categoriesArray.forEach((category, index) => {
-  let categoryHeader = categoriesArray[index].firstElementChild.textContent;
-  let categoryElementsAmount =
-    categoriesArray[index].querySelector("ul").children.length;
+categoriesArray.forEach((category) => {
+  let categoryHeader = category.querySelector("h2").textContent;
+  let categoryElementsAmount = category.querySelectorAll("li").length;
   console.log(`Category: ${categoryHeader}`);
   console.log(`Number of elements: ${categoryElementsAmount}`);
 });
