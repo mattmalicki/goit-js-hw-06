@@ -6,11 +6,16 @@ function checkLogin(event) {
     elements: { email, password },
   } = event.currentTarget;
 
+  const user = {
+    email: email.value,
+    password: password.value,
+  };
+
   if (email.value === "" || password.value === "") {
     return alert("Please fill in all the fields!");
   }
 
-  console.log(`Email: ${email.value} password: ${password.value}`);
+  console.log(user);
   event.currentTarget.reset();
 }
 
