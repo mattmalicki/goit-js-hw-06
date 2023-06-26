@@ -6,7 +6,7 @@ const range = document.querySelector("#font-size-control");
 // ---this will set begining value to match font size witch is 16
 // range.setAttribute("value", "16");
 
-range.addEventListener("change", sizeChange);
+range.addEventListener("input", sizeChange);
 
 function sizeChange() {
   text.style.fontSize = `${range.value}px`;
