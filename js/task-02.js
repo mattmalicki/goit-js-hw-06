@@ -17,6 +17,4 @@ ingredients.forEach((element) => {
   arrayLi.push(itemLi);
 });
 
-arrayLi.forEach((element) => {
-  list.append(element);
-});
+list.append(...arrayLi);
