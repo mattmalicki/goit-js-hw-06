@@ -1,4 +1,4 @@
-# goit-markup-hw-01
+# goit-js-hw-06
 
 First homework in JavaScript module in GoIT course.
 
